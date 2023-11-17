@@ -79,6 +79,8 @@ pre {
     padding: 1%;
     background-color: var(--white);
     border: 0.2em dotted var(--charcoal);
+    /* Allows the user to select the entire text of the element with a single click */
+    user-select: all;
     /* Part of the transition animation: transition will take 2 seconds */
     transition: 2s;
 }
