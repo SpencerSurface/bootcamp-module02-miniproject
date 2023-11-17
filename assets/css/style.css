@@ -72,6 +72,11 @@ main {
     border: 0.2em solid var(--charcoal);
 }
 
+.card:hover {
+    /* Ensure the enlarged code section is rendered in front of the other cards */
+    z-index: 1;
+}
+
 pre {
     font-family: monospace;
     /* Code wraps instead of overflowing */
