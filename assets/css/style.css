@@ -1,7 +1,31 @@
 :root {
-    --yellow: #ffff50;
+    --yellow: #f0ff30;
     --purple: #8000ff;
     --white: white;
     --charcoal: #404040;
+}
+
+* {
+    color: var(--white);
+}
+
+body {
+    background-color: var(--yellow);
+}
+
+header, footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+    width: 96%;
+    margin: 2%;
+    padding: 2% 3%;
+    background-color: var(--purple);
+}
+
+header p {
+    text-align: right;
 }
 
