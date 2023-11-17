@@ -1,3 +1,4 @@
+/* Color palette */
 :root {
     --yellow: #f0ff30;
     --purple: #8000ff;
@@ -12,6 +13,7 @@
 
 body {
     background-color: var(--yellow);
+    /* Place the header, main, and footer in a flexbox */
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
@@ -19,11 +21,6 @@ body {
 }
 
 header, footer {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 5%;
     width: 96%;
     margin: 2%;
     padding: 2% 3%;
@@ -32,6 +29,12 @@ header, footer {
         #4000f0 0%,
         #8000b0 100%
     );
+    /* Place the elements within the header and footer in a flexbox */
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
 }
 
 header p {
@@ -40,6 +43,7 @@ header p {
 
 main {
     width: 96%;
+    /* Place the cards in a flexbox */
     display: flex;
     flex-flow: row wrap;
     justify-items: end;
@@ -47,6 +51,7 @@ main {
 }
 
 .card {
+    /* This initial width keeps three cards to a row */
     width: 30%;
     margin: 2vh 1%;
     padding: 3vh 2vh 2vh 2vh;
@@ -54,6 +59,7 @@ main {
     border: 0.2em solid var(--charcoal);
     /* Set position to act as a baseline for the h2's absolute positioning */
     position: relative;
+    /* Place the elements in the card in a flexbox */
     display: flex;
     flex-flow: column;
     justify-content: left;
@@ -68,6 +74,7 @@ main {
     position: absolute;
     display: inline;
     padding: 1%;
+    /* Position the heading partially outside the card */
     top: -2.5vh;
     left: 1.5vh;
     background-color: var(--white);
@@ -75,11 +82,12 @@ main {
 }
 
 .card:hover {
-    /* Ensure the enlarged code section is rendered in front of the other cards */
+    /* Ensure the animated enlarged code section is rendered in front of the other cards */
     z-index: 1;
 }
 
-pre {
+code pre {
+    /* Make the code snippets monospace like most code */
     font-family: monospace;
     /* Code wraps instead of overflowing */
     white-space: pre-wrap;
@@ -93,7 +101,7 @@ pre {
 }
 
 /* Part of the transition animation: on hover, the code area will get 40% larger */
-pre:hover {
+code pre:hover {
     transform: scale(1.4);
 }
 
@@ -112,7 +120,7 @@ pre:hover {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .card {
         width: 96%;
     }
