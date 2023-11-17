@@ -14,34 +14,61 @@
     </header>
     <main>
         <section class="card">
-            <h2></h2>
-            <p></p>
-            <code><pre></pre></code>
+            <h2>Flexbox Row</h2>
+            <p>Create a flexbox arranged in rows.</p>
+            <code><pre>.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}</pre></code>
         </section>
         <section class="card">
-            <h2></h2>
-            <p></p>
-            <code><pre></pre></code>
+            <h2>Flexbox Column</h2>
+            <p>Create a flexbox arranged in a column.</p>
+            <code><pre>.column {
+    display: flex;
+    flex-direction: column
+}</pre></code>
         </section>
         <section class="card">
-            <h2></h2>
-            <p></p>
-            <code><pre></pre></code>
+            <h2>CSS Grid Layout</h2>
+            <p>Create a grid layout with 12 columns</p>
+            <code><pre>.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}</pre></code>
         </section>
         <section class="card">
-            <h2></h2>
-            <p></p>
-            <code><pre></pre></code>
+            <h2>Linear Gradients</h2>
+            <p>Set a linear color gradient as a background.</p>
+            <code><pre>.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}</pre></code>
         </section>
         <section class="card">
-            <h2></h2>
-            <p></p>
-            <code><pre></pre></code>
+            <h2>Box Transition Glow</h2>
+            <p>Create a glow effect on hover.</p>
+            <code><pre>.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+    
+    .code-card:hover,
+    .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}</pre></code>
         </section>
         <section class="card">
-            <h2></h2>
-            <p></p>
-            <code><pre></pre></code>
+            <h2>Overlay Card with Title</h2>
+            <p>Offset the title above the top of an card-type element.</p>
+            <code><pre>.card-header {
+    position: relative;
+    margin-top: -20px;
+}</pre></code>
         </section>
     </main>
     <footer>
