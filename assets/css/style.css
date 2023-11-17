@@ -48,8 +48,8 @@ main {
 
 .card {
     width: 30%;
-    margin: 1%;
-    padding: 1.5% 1% 1% 1%;
+    margin: 2vh 1%;
+    padding: 3vh 2vh 2vh 2vh;
     background-color: var(--white);
     border: 0.2em solid var(--charcoal);
     /* Set position to act as a baseline for the h2's absolute positioning */
@@ -68,7 +68,8 @@ main {
     position: absolute;
     display: inline;
     padding: 1%;
-    top: -2.3vh;
+    top: -2.5vh;
+    left: 1.5vh;
     background-color: var(--white);
     border: 0.2em solid var(--charcoal);
 }
@@ -96,4 +97,23 @@ pre:hover {
     transform: scale(1.4);
 }
 
+/* Make the design responsive to differences in screen size */
+@media (max-width: 1000px) {
+    .card {
+        width: 48%;
+    }
 
+    header {
+        flex-flow: column;
+    }
+
+    header p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 96%;
+    }
+}
